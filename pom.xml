@@ -10,6 +10,7 @@
     <version>1.0</version>
     <modules>
         <module>hw1</module>
+        <module>hw3</module>
     </modules>
 
     <properties>
