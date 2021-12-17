@@ -11,6 +11,18 @@ public class LRUCache<K, V> {
     private final LRUCacheList order = new LRUCacheList();
     private final int capacity;
 
+    public Map<K, Node> getData() {
+        return data;
+    }
+
+    public LRUCacheList getOrder() {
+        return order;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
     public LRUCache(int capacity) {
         data = new HashMap<>(capacity);
         this.capacity = capacity;
