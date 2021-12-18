@@ -2,18 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>software-design</artifactId>
+        <groupId>ru.perveevm</groupId>
+        <version>1.0</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ru.perveevm</groupId>
-    <artifactId>software-design</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0</version>
-    <modules>
-        <module>hw1</module>
-        <module>hw4</module>
-        <module>hw5</module>
-        <module>hw6</module>
-    </modules>
+    <artifactId>hw6</artifactId>
 
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
