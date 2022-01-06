@@ -81,4 +81,16 @@ public class AddProductServletTest {
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
         Assertions.assertEquals(response.body(), "OK\n");
     }
+
+    @Test
+    public void multipleAddProductTest() throws IOException, InterruptedException {
+        HttpClient client = HttpClient.newHttpClient();
+
+        for (int price = -10; price <= 10; price++) {
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create(String.format(REQUEST_FORMAT, "multiple_name", price))).build();
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            Assertions.assertEquals(response.body(), "OK\n");
+        }
+    }
 }
