@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: "jdbc:h2:mem:exchange"
+    driver-class-name: "org.h2.Driver"
+    username: "ejudge"
+    password: "strategy123"
+  jpa:
+    database-platform: "org.hibernate.dialect.H2Dialect"
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: false
